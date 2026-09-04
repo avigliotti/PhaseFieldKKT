@@ -1,0 +1,30 @@
+name = "PhaseFieldKKT"
+uuid = "7f3b9f74-8f08-42d9-a2fc-1b1e9b7cd73b"
+version = "0.1.0"
+authors = ["andrea <andrea.vigliotti@gmail.com>"]
+
+[deps]
+AD4SM = "7861f83d-ce22-4070-aa20-44578e274a9b"
+AbaqusReader = "bc6b9049-e460-56d6-94b4-a597b2c0390d"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+Pardiso = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+WriteVTK = "64499a7a-5c06-52f2-abe2-ccb03c286192"
+
+[compat]
+AD4SM = "0.2.0"
+AbaqusReader = "0.2.6"
+Dates = "1.11.0"
+FileIO = "1.17.0"
+LinearAlgebra = "1.11.0"
+Logging = "1.11.0"
+Pardiso = "1.1.2"
+Printf = "1.11.0"
+Random = "1.11.0"
+SparseArrays = "1.11.0"
+WriteVTK = "1.21.2"
