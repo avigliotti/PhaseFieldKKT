@@ -5,7 +5,7 @@ uniaxial dogbone tension tests, compact-specimen pin loading, and periodic
 composite RVE analysis under multiaxial macroscopic strain. See the
 [README](./README.md) for the theoretical background and the full solver
 API (`generic_solver`, `dogbone_solver`, `compactspecimen_solver`,
-`solve_periodic_bc`), and the docstring of each solver (e.g.
+`periodicbc_solver`), and the docstring of each solver (e.g.
 `?dogbone_solver` in the REPL) for the complete list of keyword arguments.
 
 Install the package directly from GitHub (not yet registered):
@@ -113,7 +113,7 @@ mat = let
          mat = Materials.Hooke2D(E, ν, small=true, plane_stress=true)
          Materials.PhaseField{typeof(mat),:ATn}(l0, Gc, mat, 2)
        end
-PhaseFieldSolvers.compactspecimen_solver("CTSpecimen_lc5000lci1000", 
+PhaseFieldSolvers.compactspecimen_solver(
                     mat       = mat,
                     bwithhist = false,
                     sPostFix  = "nhATn2")
@@ -128,7 +128,7 @@ mat = let
          mat = Materials.Hooke2D(E, ν, small=true, plane_stress=true)
          Materials.PhaseField{typeof(mat),:ATn}(l0, Gc, mat, 1)
        end
-PhaseFieldSolvers.compactspecimen_solver("CTSpecimen_lc5000lci1000", 
+PhaseFieldSolvers.compactspecimen_solver(
                     mat       = mat,
                     bwithhist = true,
                     sPostFix  = "whATn1")
@@ -143,7 +143,7 @@ mat = let
          mat = Materials.Hooke2D(E, ν, small=true, plane_stress=true)
          Materials.PhaseField{typeof(mat),:ATn}(l0, Gc, mat, 2)
        end
-PhaseFieldSolvers.compactspecimen_solver("CTSpecimen_lc5000lci1000", 
+PhaseFieldSolvers.compactspecimen_solver(
                     mat       = mat,
                     bwithhist = true,
                     sPostFix  = "whATn2")
@@ -154,7 +154,7 @@ PhaseFieldSolvers.compactspecimen_solver("CTSpecimen_lc5000lci1000",
 
 
 ```julia
-PhaseFieldSolvers.solve_periodic_bc(
+PhaseFieldSolvers.periodicbc_solver(
                   ϵM0        = [1, NaN, NaN]*2.500e-03, 
                   θ          = 0.000000, 
                   fiber_mat  = let
@@ -176,7 +176,7 @@ PhaseFieldSolvers.solve_periodic_bc(
 
 
 ```julia
-PhaseFieldSolvers.solve_periodic_bc(
+PhaseFieldSolvers.periodicbc_solver(
           ϵM0        = [-0.500, 0.866, NaN]*2.500e-03, 
           θ          = 0.000000, 
           fiber_mat  = let

@@ -6,11 +6,11 @@ project_hash = "d76ed292e4b33ae9a0d5210a20c9e3b64f31887a"
 
 [[deps.AD4SM]]
 deps = ["Dates", "Distributed", "LinearAlgebra", "Printf", "ProgressMeter", "SparseArrays", "StaticArrays"]
-git-tree-sha1 = "31269417b6df13a5fea5476daa359f8110098058"
-repo-rev = "v0.2.0"
-repo-url = "https://github.com/avigliotti/AD4SM.jl"
+git-tree-sha1 = "ad8175767a5be926cb3cb3f5bfff9fc197818667"
+repo-rev = "v0.2.1"
+repo-url = "https://github.com/avigliotti/AD4SM.jl/"
 uuid = "7861f83d-ce22-4070-aa20-44578e274a9b"
-version = "0.2.0"
+version = "0.2.1"
 
 [[deps.AbaqusReader]]
 deps = ["Logging", "TOML"]
@@ -198,7 +198,7 @@ uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
 version = "1.1.2"
 
 [[deps.PhaseFieldKKT]]
-deps = ["AbaqusReader", "Dates", "FileIO", "LinearAlgebra", "Logging", "Pardiso", "Printf", "Random", "SparseArrays", "WriteVTK"]
+deps = ["AD4SM", "AbaqusReader", "Dates", "FileIO", "LinearAlgebra", "Logging", "Pardiso", "Printf", "Random", "SparseArrays", "WriteVTK"]
 path = "."
 uuid = "7f3b9f74-8f08-42d9-a2fc-1b1e9b7cd73b"
 version = "0.1.0"
