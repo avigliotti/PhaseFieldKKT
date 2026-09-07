@@ -1,4 +1,11 @@
 # Phase-Field Fracture Solver with Direct Constraint Enforcement
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Julia](https://img.shields.io/badge/Julia-1.12+-blue.svg)](https://julialang.org/)
+[![DOI](https://img.shields.io/badge/DOI-10.1007%2Fs10704--026--00940--z-brightgreen)](https://doi.org/10.1007/s10704-026-00940-z)
+
+<p align="center">
+  <img src="./res/CTSpecimentria_b4000stdlc0250lci0050whATn1.gif" width="45%">
+</p>
 
 This repository contains the Julia source code accompanying the [research paper](https://rdcu.be/fBIRj):
 
@@ -105,7 +112,7 @@ for the full list of keyword arguments, defaults, and return values.
 
 ## Numerical Examples
 
-See [`./examples_notebook.md`](./examples_notebook.md) or [`./examples_notebook.ipynb`](./examples_notebook.ipynb) for
+See [`./res/examples_notebook.md`](./res/examples_notebook.md) or [`./examples_notebook.ipynb`](./examples_notebook.ipynb) for
 runnable examples covering:
 
 *   **Uniaxial tensile tests** (`dogbone_solver`) — comparing AT1 vs. AT2
