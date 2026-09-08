@@ -112,7 +112,7 @@ for the full list of keyword arguments, defaults, and return values.
 
 ## Numerical Examples
 
-See [`./res/examples_notebook.md`](./res/examples_notebook.md) or [`./examples_notebook.ipynb`](./examples_notebook.ipynb) for
+See [`./res/examples_notebook.md`](./res/examples_notebook.md) or [`./res/examples_notebook.ipynb`](./res/examples_notebook.ipynb) for
 runnable examples covering:
 
 *   **Uniaxial tensile tests** (`dogbone_solver`) — comparing AT1 vs. AT2
