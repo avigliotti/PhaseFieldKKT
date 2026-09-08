@@ -3,7 +3,7 @@
 This notebook reproduces the numerical examples from the accompanying paper:
 uniaxial dogbone tension tests, compact-specimen pin loading, and periodic
 composite RVE analysis under multiaxial macroscopic strain. See the
-[README](./README.md) for the theoretical background and the full solver
+[README](../README.md) for the theoretical background and the full solver
 API (`generic_solver`, `dogbone_solver`, `compactspecimen_solver`,
 `periodicbc_solver`), and the docstring of each solver (e.g.
 `?dogbone_solver` in the REPL) for the complete list of keyword arguments.
