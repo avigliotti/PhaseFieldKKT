@@ -7,8 +7,6 @@ project_hash = "d76ed292e4b33ae9a0d5210a20c9e3b64f31887a"
 [[deps.AD4SM]]
 deps = ["Dates", "Distributed", "LinearAlgebra", "Printf", "ProgressMeter", "SparseArrays", "StaticArrays"]
 git-tree-sha1 = "ad8175767a5be926cb3cb3f5bfff9fc197818667"
-repo-rev = "v0.2.1"
-repo-url = "https://github.com/avigliotti/AD4SM.jl/"
 uuid = "7861f83d-ce22-4070-aa20-44578e274a9b"
 version = "0.2.1"
 
